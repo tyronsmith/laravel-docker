@@ -27,3 +27,4 @@ docker exec -u 0 $CONTNAME composer update -d /var/www/html/$PROJNAME
 # install npm on project folder and run the manager
 docker exec -u 0 $CONTNAME npm --prefix /var/www/html/$PROJNAME install /var/www/html/$PROJNAME
 docker exec -u 0 $CONTNAME npm --prefix /var/www/html/$PROJNAME run dev /var/www/html/$PROJNAME
+docker exec -u 0 $CONTNAME npm --prefix /var/www/html/$PROJNAME install vue /var/www/html/$PROJNAME

@@ -1,0 +1,50 @@
+version: "3"
+
+services:
+  stoddart-web:
+    container_name: web
+    build:
+      context: .
+      # relative location of the Dockerfile from docker-compose file
+      dockerfile: ./Dockerfile
+    image: "stoddart-web:${VERSION_WEB}"
+    # Using default file (.env), any other file doesn't work!!!
+    env_file:
+      - .env  
+    volumes:
+      - ${USER_HOME}${CONTRACTPLUS_SOURCE}:/var/www/html/project
+      - ${AWS_HOME}:/root/.aws
+    ports:
+      - "80:80"
+  stoddart-services:
+    container_name: services
+    build:
+      context: .
+      # relative location of the Dockerfile from docker-compose file
+      dockerfile: ./Dockerfile
+    image: "stoddart-web:${VERSION_WEB}"
+    # Using default file (.env), any other file doesn't work!!!
+    env_file:
+      - .env  
+    volumes:
+      - ${USER_HOME}${SERVICES_SOURCE}:/var/www/html/project
+      - ${AWS_HOME}:/root/.aws
+    ports:
+      - "81:80" 
+  stoddart-subcontractors:
+    container_name: subcontractors
+    build:
+      context: .
+      # relative location of the Dockerfile from docker-compose file
+      dockerfile: ./Dockerfile
+    image: "stoddart-web:${VERSION_WEB}"
+    # Using default file (.env), any other file doesn't work!!!
+    env_file:
+      - .env  
+    volumes:
+      - ${USER_HOME}${SUBCONTRACTORS_SOURCE}:/var/www/html/project
+      - ${AWS_HOME}:/root/.aws
+    ports:
+      - "82:80"
+      
+# DB service configuration here

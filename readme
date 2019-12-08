@@ -1,0 +1,27 @@
+1) Configure following files with USER_PROPERTIES
+
+devweb\build.bat :: This will build the image from the Dockerfile 
+devweb\deploy.bat :: This will deploy the image to ECR registry using aws credentials. Please ensure you have aws credentials and config files configured with Access_Key and Region - see below.
+devweb\start.bat :: This will download the image and run the container. It will then apply container changes as described in this file. 
+devweb\run.bat :: This will run the locally build image. Use this in conjunction with the build.bat. As in run 'build.bat' to build/rebuild the image and then run 'run.bat' to run the container. 
+
+~.aws/config file
+[default]
+region = ap-southeast-2
+
+~.aws/credentials file
+[default]
+aws_access_key_id=<Your_Access_Key_Id>
+aws_secret_access_key=<Your_Secret_Access_Key>
+
+Usage scenarios
+
+Image Developer/Maintainer
+
+build.bat to create the image after making changes
+run.bat to run a container from the image built, this is to test things locally before deploying to registry
+deploy.bat to deploy this image to registry - ENSURE version number is managed before deploying!
+
+Image Consumer
+
+start.bat - this will download (pull) the image from ECR registry using your aws credentials, create, run and configure your local docker container for use. ALL IN ONE script for the consumer.

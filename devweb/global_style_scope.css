@@ -1,0 +1,145 @@
+       
+       * {
+          	font-family: CenturyGothic, sans-serif;
+        }
+      	td.nameandaddress{
+          color: white;
+          font-size:10;
+          line-height: 12;
+          padding: 20px 0px;
+      	}
+		table {
+			font-size: 9pt;
+			table-layout: fixed;
+		}
+        th {
+            font-weight: bold;
+            font-size: 8pt;
+            vertical-align: middle;
+            padding: 5px 6px 3px;
+            border-bottom: 1px solid;
+            color: #333333;
+        }
+      	thead{
+        	height: 20px;
+      	}
+        td {
+           padding: 4px 6px; 
+        }
+		td p { align:left }
+        b {
+            font-weight: bold;
+            color: #333333;
+        }
+        table.header td {
+            padding: 0px;
+            font-size: 10pt;
+        }
+        table.footer td {
+            padding: 0px;
+            font-size: 8pt;
+        }
+      	table.itemtable{
+        	width:100%;
+            padding:20px;
+      	}
+        table.itemtable th {
+          	margin-top:30px;
+            padding-top: 10px;
+        }
+        table.body td {
+            padding-top: 2px;
+        }
+        table.total {
+            page-break-inside: avoid;
+        }
+
+        td.firstcol {
+          	font-size: 10pt;
+          	font-weight: bold;
+          	padding-top: 6px;
+          	padding-bottom: 2px;
+          	align: right;
+          	width: 10%;
+        }
+        td.secondcol {
+          	padding-top: 6px;
+          	width: 40%;
+      	}
+      	td.thirdcol{
+        	border-left-style: solid;
+    	  	border-color: #00aeef;
+          	border-left: 1px;
+          	padding-left: 12px;
+          	font-weight: bold;
+          	width: 15%;
+     	}
+      	tc.forthcol{
+        	width: 35%;
+      	}
+        span.number {
+            font-size: 12pt;
+        }
+        span.itemname {
+            font-weight: bold;
+            line-height: 150%;
+        }
+        hr {
+            width: 100%;
+            color: #d3d3d3;
+            background-color: #d3d3d3;
+            height: 1px;
+        }
+      td.title {
+        width: 50%;
+        heigth: 100%;
+        background-color: #00aeef;
+        vertical-align: middle;
+       	align: center;
+        font-weight: bold;
+        font-size: 12pt;
+        color: #FFFFFF;
+      }
+      td.total {
+        background-color: #92a9b5;
+        font-weight: bold;
+        height: 30px;
+        vertical-align: middle;
+      }
+      p.notes{
+        font-size: 7pt;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      p.footer{
+        width: 100%;
+        font-size: 10pt;
+        font-weight: bold;
+        align: center;
+        line-height: 80%;
+        padding:20px;
+        color:white;
+	  }
+      td.pagenumbers{
+        font-weight: bold;
+        font-size: 12pt;
+        color: #FFFFFF;
+        vertical-align: middle;
+      }
+      table.footerbank{
+        line-height: 10%;
+        padding:14px;
+      }
+      td.duedate{
+        font-weight: bold;
+        font-size: 12pt;
+        align: center;
+        padding: 5px 0px 0px;
+      }
+      td.terms{
+        align: center;
+        padding: 0px 0px 5px;
+      }
+      .leftmargin{
+        margin-left:20px;
+      }

@@ -1,0 +1,3 @@
+<table class="header" style="background-image: https://2071425.app.netsuite.com/core/media/media.nl?id=23&amp;c=2071425&amp;h=37b38890c19750db6b37 background-size:cover; width: 100%;"><tr> <!-- production file cabinet, images -->
+	<td class="nameandaddress leftmargin"><strong>${subsidiary.legalname}</strong><br />PO Box 3171 Mount Ommaney Qld 4074<br /><strong>P:</strong> 3725 5988 &nbsp;<strong>E: </strong> credit@stoddarts.com.au &nbsp;<strong>ABN:</strong> ${subsidiary.federalidnumber} &nbsp;<strong>ACN:</strong> ${subsidiary.state1taxnumber}</td>
+	</tr></table>
