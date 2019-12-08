@@ -1,6 +1,6 @@
 FROM centos:7 
  
-MAINTAINER "CaptainAwesome" <tyron.smith@stoddarts.com.au> 
+MAINTAINER "CaptainAwesome" 
  
 ENV container docker 
 #SK: You can use variables from .env file anywhere in this file, if required e.g. $USER_HOME 
@@ -29,10 +29,8 @@ COPY config/v-host.conf /etc/httpd/conf.d/z-host.conf
  
 # create webserver-default directory 
 RUN mkdir -p /var/www/html 
-RUN mkdir -p /var/www/html/contractplus-web 
+RUN mkdir -p /var/www/html/project 
  
-#SK: create contractplus-web directory (optional) 
-#TKS: making the "project" instead of "contractplus-web". This lets us use the same v-host file for different containers. 
 RUN mkdir -p /var/www/html/project 
  
 #SK: install AWSCLI (Reference: https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html) 
