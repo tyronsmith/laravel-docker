@@ -31,8 +31,6 @@ COPY config/v-host.conf /etc/httpd/conf.d/z-host.conf
 RUN mkdir -p /var/www/html 
 RUN mkdir -p /var/www/html/project 
  
-RUN mkdir -p /var/www/html/project 
- 
 #SK: install AWSCLI (Reference: https://docs.aws.amazon.com/cli/latest/userguide/install-linux.html) 
 RUN curl -O https://bootstrap.pypa.io/get-pip.py 
 RUN python get-pip.py 
