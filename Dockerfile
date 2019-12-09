@@ -11,7 +11,7 @@ RUN yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
 RUN yum -y update
 
 # php && httpd
-RUN yum -y install php httpd php-cli php-pgsql php-pdo php-ldap php-intl php-zip php-xml php-mbstring ca-certificates gcc-c++ make libpng build-essential libpng-devel ghostscript php-bcmath
+RUN yum -y install php httpd php-cli php-pgsql php-pdo php-ldap php-intl php-zip php-xml php-mbstring ca-certificates gcc-c++ make libpng build-essential libpng-devel ghostscript php-bcmath redis
 
 # tools
 RUN yum -y install yum-utils epel-release iproute at curl crontabs
